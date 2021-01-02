@@ -168,11 +168,11 @@ contract StandardToken is TRC20, BasicToken {
 
 }
 
-contract ZTNZ is StandardToken {
-    string public name = "Ztranzit coin";
-    string public symbol = "ZTNZ";
-    uint8 public decimals = 6;
-    uint256 public INITIAL_SUPPLY = 3000000 * 10 ** uint256(decimals);
+contract CENTS is StandardToken {
+    string public name = "Cents Coin";
+    string public symbol = "CENTS";
+    uint8 public decimals = 18;
+    uint256 public INITIAL_SUPPLY = 10000000000 * 10 ** uint256(decimals);
 
     constructor() public {
         totalSupply_ = INITIAL_SUPPLY;
